@@ -43,8 +43,62 @@
 
 .dropdown-content a:hover {background-color: #f1f1f1}
 .show {display:block;}
+      /* Style the tab buttons */
+.tablink {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+}
+
+/* Change background color of buttons on hover */
+.tablink:hover {
+    background-color: #777;
+}
+
+/* Set default styles for tab content */
+.tabcontent {
+    color: white;
+    display: none;
+    padding: 50px;
+    text-align: center;
+}
+
+/* Style each tab content individually */ 
+#London {background-color:red;}
+#Paris {background-color:green;}
+#Tokyo {background-color:blue;}
+#Oslo {background-color:orange;}
   </style>
     <script>
+      function openCity(cityName, elmnt, color) {
+    // Hide all elements with class="tabcontent" by default */
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    // Remove the background color of all tablinks/buttons
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+    }
+
+    // Show the specific tab content
+    document.getElementById(cityName).style.display = "block";
+
+    // Add the specific color to the button used to open the tab content
+    elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
@@ -90,40 +144,30 @@ window.onclick = function(event) {
     <a href="#">Link 3</a>
   </div>
 </div>
-    <h1><mark>Hi My name is kevin</mark></h1>
-    <p>Kevin is an amazing thing</p>
-    <p>I like ecs</p>
-    <hr />
-    <p> I like potatoes</p>
-    
-    <table style="width:40%">
-    <tr>
-         <th>Firstname</th>
-         <th>Lastname</th> 
-         <th>Age</th>
-    </tr>
-    <tr>
-        <td>Kevin</td>
-       <td>Li</td> 
-       <td>50</td>
-    </tr>
-     <tr>
-        <td>Kevin</td>
-        <td>Li</td> 
-        <td>64</td>
-  </tr>
-  </table>
-    <br />
-    <form>
- <fieldset>
-  <legend>Personalia:</legend>
-  Name: <input type="text"><br>
-  Email: <input type="text"><br>
-  Date of birth: <input type="text">
- </fieldset>
-</form>
-    
-    <br />
+  <div id="London" class="tabcontent">
+  <h3>Lol kevin is good</h3>
+  <p>I am amazing</p>
+</div>
+
+<div id="Paris" class="tabcontent">
+  <h3>Kevin is a potato</h3>
+  <p>I am amazing</p> 
+</div>
+
+<div id="Tokyo" class="tabcontent">
+  <h3>Kevin is old</h3>
+  <p>I am amazing</p>
+</div>
+
+<div id="Oslo" class="tabcontent">
+  <h3>Kevin is cool</h3>
+  <p>I am amazing</p>
+</div>
+
+<button class="tablink" onclick="openCity('London', this, 'red')" id="defaultOpen">Kevin Is Amazing</button>
+<button class="tablink" onclick="openCity('Paris', this, 'green')">Potatoes</button>
+<button class="tablink" onclick="openCity('Tokyo', this, 'blue')">Unicorns</button>
+<button class="tablink" onclick="openCity('Oslo', this, 'orange')">Amazing</button>
   
   </body>
 </html>
