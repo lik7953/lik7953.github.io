@@ -10,6 +10,21 @@
              border: 5px solid gray;
              margin: 0;
          }
+        table {
+             font-family: arial, sans-serif;
+             border-collapse: collapse;
+             width: 100%;
+         }
+
+         td, th {
+             border: 1px solid #dddddd;
+             text-align: left;
+             padding: 8px;
+         }
+
+         tr:nth-child(even) {
+             background-color: #dddddd;
+         }
       h1 { color: #ffffff; font-family: 'Raleway',sans-serif; font-size: 62px; font-weight: 800; line-height: 72px; margin: 0 0 24px; text-align: center; text-transform: uppercase; }
       h2 { color: #ffffff; font-family: 'Raleway',sans-serif; font-size: 30px; font-weight: 800; line-height: 36px; margin: 0 0 24px; text-align: center; }
       p { color: #f8f8f8; font-family: 'Raleway',sans-serif; font-size: 18px; font-weight: 500; line-height: 32px; margin: 0 0 24px; }
@@ -53,7 +68,40 @@
      <br />
       <div class="title>
          <h1>Welcome to Kevin's Website</h1>
-         <p>This website will take a look at several of the best countries to live in</p>
+         <p>This website will take a look at several of the best cities in the world</p>
       </div>
+     <br />
+      <table>
+        <tr>
+          <th>Picture</th>
+          <th>City</th>
+          <th>Population</th>
+        </tr>
+        <tr>
+          <td>Alfreds Futterkiste</td>
+          <td>Vancouver</td>
+          <td>2,624,000</td>
+        </tr>
+        <tr>
+          <td>Centro comercial Moctezuma</td>
+          <td>Auckland</td>
+          <td>1,300,000</td>
+        </tr>
+        <tr>
+          <td>Ernst Handel</td>
+          <td>Melbourne</td>
+          <td>4,200,000</td>
+        </tr>
+        <tr>
+          <td>Island Trading</td>
+          <td>Copenhagen</td>
+          <td>1,200,000</td>
+        </tr>
+        <tr>
+          <td>Laughing Bacchus Winecellars</td>
+          <td>Frankfurt</td>
+          <td>2,300,000</td>
+        </tr>
+      </table>
    </body>
 </html>
