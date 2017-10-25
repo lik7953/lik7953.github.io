@@ -4,6 +4,17 @@
      <title>Kevin's Github Webstie</title>
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <style>
+       .container {
+         position: relative;
+         text-align: center;
+         color: white;
+       }
+       .centered {
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+       }
      .footer {
          position: fixed;
          left: 0;
@@ -36,7 +47,7 @@
              background-color: #dddddd;
          }
       h1 { color: #ffffff; font-family: 'Raleway',sans-serif; font-size: 45px; font-weight: 800; line-height: 72px; margin: 0 0 10px; text-align: center; text-transform: uppercase; }
-      h2 { color: #ffffff; font-family: 'Raleway',sans-serif; font-size: 30px; font-weight: 800; line-height: 36px; margin: 0 0 24px; text-align: center; }
+      h2 { color: yellow; font-family: 'Raleway',sans-serif; font-size: 30px; font-weight: 800; line-height: 36px; margin: 0 0 24px; text-align: center; }
       p { color: #f8f8f8; font-family: 'Raleway',sans-serif; font-size: 18px; font-weight: 500; line-height: 32px; margin: 0 0 24px; }
       a { color: #c8c8c8; text-decoration: underline; }
       a:hover { color: #1c1c1c; text-decoration: underline; }
@@ -65,7 +76,12 @@
    </head>
      
    <body style="background-color:#2EA9D1;">
+     <div class="container">
      <img src="http://mikeandrewphotography.com/wp-content/uploads/2014/07/Sydney-City-Panorama.jpg" style="width:100%;">
+      <div class="centered">
+      <h2>Kevin's Website</h2>
+      </div>
+     </div>
       <div class="topnav" id="myTopnav">
          <a href="lik7953.github.io/index.html">Home</a>
          <a href="#news">Vancouver</a>
