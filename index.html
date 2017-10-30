@@ -98,19 +98,16 @@
         padding:20px;
         float:left;
         width:30%;/*The width is 20%, by default*/
+        display: table-cell
       }
       .main {
         background-color:#f1f1f1;
         padding:20px;
         float:left;
         width:70%;/*The width is 60%, by default*/
+        display: table-cell
       }
-      /*Use a media query to add a break point at 800px:*/
-      @media (max-width:800px) {
-        .left, .main {
-          width:100%;/*The width is 100%, when the viewport is 800px or smaller*/
-        }
-      }
+
       .button {
         background-color: #4CAF50;
         border: none;
@@ -197,7 +194,7 @@
       	<h1> Welcome to Kevin's Website</h1>
         <h6>Here you can learn about the great cities in the United States. From the bustling streets of Manhattan, to the calmness of Honolulu, you can find almost anything you want to know about any major US City. You can explore the Northeast, Southeast, South, Midwest, and Western regions of the United States, their attractions, and highlights. </h6>
       </div>
-      
+      	<div class="collums">
           <div class="left">
             <h3>Directory</h3>
             <p>Northeast</p>
@@ -270,6 +267,7 @@
       </div>  
       <br />
 
+    </div>
     </div>
   </body>
 </html>
