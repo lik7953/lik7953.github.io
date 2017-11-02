@@ -1,0 +1,272 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+      margin:0;
+      background-image: url("http://supernovathemes.com/wp-content/themes/supernovathemes/images/bg/b33.png");
+      }
+      .navbar {
+        overflow: hidden;
+        background-color: #333;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+      }
+      .navbar a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+      
+      .maintext {
+        margin-top: 15px;
+        margin-right: 90px;
+        margin-left: 90px;
+      }
+      
+      * {box-sizing:border-box}
+        /* Slideshow container */
+        .slideshow-container {
+          position: relative;
+          margin: auto;
+        }
+        .mySlides {
+            display: none;
+        }
+       * {box-sizing:border-box}
+      body {font-family: Verdana,sans-serif;}
+      .mySlides {display:none}
+      /* Slideshow container */
+      .slideshow-container {
+        position: relative;
+        margin: auto;
+      }
+      /* Caption text */
+      .text {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+      }
+      /* Number text (1/3 etc) */
+      .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+      /* The dots/bullets/indicators */
+      .active {
+        background-color: #717171;
+      }
+      /* Fading animation */
+      .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+      @-webkit-keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+      }
+      @keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+      }
+      /* On smaller screens, decrease text size */
+      @media only screen and (max-width: 300px) {
+        .text {font-size: 11px}
+      }
+      
+      .heading {
+        background-color:#2196F3;
+  		padding:20px;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      .left {
+        background-color:#4CAF50;
+        padding:20px;
+        width:30%;/*The width is 20%, by default*/
+        display: table-cell
+      }
+      .main {
+        background-color:#f1f1f1;
+        padding:20px;
+        width:70%;/*The width is 60%, by default*/
+        display: table-cell
+      }
+      .button {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 8px 16px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 2px 1px;
+        cursor: pointer;
+    }
+    .footer {
+        background-color:#F3AE4A;
+  		padding:20px;
+      }
+    </style>
+    
+ 
+  </head>
+  <body>
+  	<div class="navbar">
+      <a href="https://lik7953.github.io/">Home</a>
+      <a href="#contact">About</a>
+      <a href="/northeast">Northeast</a>
+      <a href="/southeast">Southeast</a>
+      <a href="#contact">Midwest</a>
+      <a href="#contact">South</a>
+      <a href="#contact">West</a>
+    </div>
+    <div class="maintext">
+    
+    
+    <br />
+    
+    <div class="maintext">
+    	<div class="slideshow-container">
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="https://dvdbash.files.wordpress.com/2013/08/wallpaper-5760x1200-chicago-skyline-panorama-dvdbash-wordpress.jpg" style="width:100%">
+            <div class="text">Chicago, Illinois</div>
+          </div>
+
+          <!-- <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="http://fc08.deviantart.com/fs51/f/2009/264/2/7/If_you_are_going_to_SF_by_P_i_a_n_o_M_a_n.jpg" style="width:100%">
+            <div class="text">San Francisco, California</div>
+          </div> -->
+
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="https://dvdbash.files.wordpress.com/2013/08/wallpaper-5760x1200-new-york-brooklyn-bridge-manhattan-bridge-panorama-dvdbash-wordpress.jpg" style="width:100%">
+            <div class="text">New York, New York</div>
+          </div>
+
+        </div>
+
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+        <script>
+          var slideIndex = 0;
+          showSlides();
+          function showSlides() {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                 slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 3000); // Change image every 2 seconds
+          }
+          </script>
+                <div class="heading">
+      	<h1> Southeastern United States</h1>
+        <h6>The Southeastern United States is the eastern portion of the Southern United States, and the southern portion of the Eastern United States. It comprises 14 states in the southern United States. Major cities include Atlanta, Miami, and Washington. The area is very diverse, with the warm beaches of florida, and and the plains of washington and maryland.</h6>
+      </div>
+      	<div class="collums">
+          <div class="left">
+            <h3>Directory</h3>
+            <p>Northeast</p>
+            <ul>
+              <li>New York City</li>
+              <li>Boston</li>
+              <li>Philidelphia</li>
+            </ul> 
+            <p>Southeast</p>
+            <ul>
+            	<li>Washington</li>
+                <li>Baltimore</li>
+                <li>Atlanta</li>
+                <li>Miami</li>
+            </ul>
+            <p>Midwest</p>
+            <ul>
+            	<li>Chicago</li>
+                <li>Minneapolis</li>
+                <li>Columbus</li>
+            </ul>
+            <p>South</p>
+            <ul>
+            	<li>Houston</li>
+                <li>Dallas</li>
+                <li>New Orleans</li>
+            </ul>
+            <p>West</p>
+            <ul>
+            	<li>Los Angeles</li>
+                <li>San Francisco</li>
+                <li>Seattle</li>
+            </ul>
+            <br />
+            <h3>About Kevin</h3>
+            <p>Kevin is a potato that likes unicorns.</p> 
+            <p>this website is meant for school purposes only</p>
+          </div>
+          
+          <div class="main">
+            <h3>Major Cities</h3>
+            
+            <fieldset>
+            	<legend><h4>Miami</h4></legend>
+                <img src="http://www.sepeb.com/miami-wallpaper/miami-wallpaper-009.jpg" alt="Miami" width="100%">
+                <p>Miami is an international city at Florida's southeastern tip. Its Cuban influence is reflected in the cafes and cigar shops that line Calle Ocho in Little Havana. On barrier islands across the turquoise waters of Biscayne Bay is Miami Beach, home to South Beach. This glamorous neighborhood is famed for its colorful art deco buildings, white sand, surfside hotels and trendsetting nightclubs.</p>
+            </fieldset>
+            
+            <fieldset>
+            	<legend><h4>Atlanta</h4></legend>
+                <img src="https://static1.squarespace.com/static/565923e4e4b0f0c1a01ca238/t/56b3c1c10442625622db88ca/1454621128264/atlanta-skyline-wallpaper.png?format=1500w" alt="New York" width="100%">
+                <p>Atlanta is the capital of the U.S. state of Georgia. It played an important part in both the Civil War and the 1960s Civil Rights Movement. Atlanta History Center chronicles the city's past, and the Martin Luther King Jr. National Historic Site is dedicated to the African-American leader’s life and times. Downtown, Centennial Olympic Park, built for the 1996 Olympics, encompasses the massive Georgia Aquarium.</p>
+                
+            </fieldset>
+            
+            <fieldset>
+            	<legend><h4>Washington D.C</h4></legend>
+                <img src="https://wallpaperscraft.com/image/washington_dc_building_tree_28471_1920x1080.jpg" alt="New York" width="100%">
+
+                <p>Washington, DC, the U.S. capital, is a compact city on the Potomac River, bordering the states of Maryland and Virginia. It’s defined by imposing neoclassical monuments and buildings – including the iconic ones that house the federal government’s 3 branches: the Capitol, White House and Supreme Court. It's also home to iconic museums and performing-arts venues such as the Kennedy Center.</p>
+                
+            </fieldset>
+            
+            
+            
+          </div>
+
+      </div>  
+      <br />
+
+    </div>
+    </div>
+  </body>
+</html>
