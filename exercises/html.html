@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="https://lik7953.github.io/theme.css">
+    <style>
+    	 .code {
+        margin-top: 15px;
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-bottom: 15px;
+        background-color: #E2DAD8;
+      }
+.code code {
+	line-height: 150%;
+}
+</style>
+ 
+  </head>
+  <body>
+  	<div class="navbar">
+      <a href="https://lik7953.github.io">Home</a>
+      <a href="https://lik7953.github.io/exercises">Exercises</a>
+      <a href="https://lik7953.github.io/northeast.html">Northeast</a>
+      <a href="https://lik7953.github.io/southeast">Southeast</a>
+      <a href="#contact">Midwest</a>
+      <a href="#contact">South</a>
+      <a href="#contact">West</a>
+    </div>
+    <div class="maintext">
+    
+    
+    <br />
+    
+    <div class="maintext">
+    	<div class="slideshow-container">
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="https://dvdbash.files.wordpress.com/2013/08/wallpaper-5760x1200-chicago-skyline-panorama-dvdbash-wordpress.jpg" style="width:100%">
+            <div class="text">Chicago, Illinois</div>
+          </div>
+
+          <!-- <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="http://fc08.deviantart.com/fs51/f/2009/264/2/7/If_you_are_going_to_SF_by_P_i_a_n_o_M_a_n.jpg" style="width:100%">
+            <div class="text">San Francisco, California</div>
+          </div> -->
+
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="https://dvdbash.files.wordpress.com/2013/08/wallpaper-5760x1200-new-york-brooklyn-bridge-manhattan-bridge-panorama-dvdbash-wordpress.jpg" style="width:100%">
+            <div class="text">New York, New York</div>
+          </div>
+
+        </div>
+
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+        <script>
+          var slideIndex = 0;
+          showSlides();
+          function showSlides() {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                 slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 3000); // Change image every 2 seconds
+          }
+          </script>
+                <div class="heading">
+      	<h1> Welcome to Kevin's Website</h1>
+        <h6>Here you can learn about the great cities in the United States. From the bustling streets of Manhattan, to the calmness of Honolulu, you can find almost anything you want to know about any major US City. You can explore the Northeast, Southeast, South, Midwest, and Western regions of the United States, their attractions, and highlights. </h6>
+      </div>
+      	<div class="collums">
+          <div class="left">
+            <h3>Directory</h3>
+            <p>Northeast</p>
+            <ul>
+              <li>New York City</li>
+              <li>Boston</li>
+              <li>Philidelphia</li>
+            </ul> 
+            <p>Southeast</p>
+            <ul>
+            	<li>Washington</li>
+                <li>Baltimore</li>
+                <li>Atlanta</li>
+                <li>Miami</li>
+            </ul>
+            <p>Midwest</p>
+            <ul>
+            	<li>Chicago</li>
+                <li>Minneapolis</li>
+                <li>Columbus</li>
+            </ul>
+            <p>South</p>
+            <ul>
+            	<li>Houston</li>
+                <li>Dallas</li>
+                <li>New Orleans</li>
+            </ul>
+            <p>West</p>
+            <ul>
+            	<li>Los Angeles</li>
+                <li>San Francisco</li>
+                <li>Seattle</li>
+            </ul>
+            <br />
+            <h3>About Kevin</h3>
+            <p>Kevin is a potato that likes unicorns.</p> 
+            <p>this website is meant for school purposes only</p>
+          </div>
+          
+          <div class="main">
+            <h3>HTML Exersizes</h3>
+            
+            <fieldset>
+            	<legend><h4>Paragraph</h4></legend>
+                <div class="code">
+                	<code>
+                    <xmp>
+  <!DOCTYPE html>
+  <html>
+  <body>
+
+  <p>W3Schools is a web developer's site.</p>
+
+  </body>
+  </html>
+                    </xmp>
+                    </code>
+                </div>
+<br />
+<div class="code">
+<br />
+  <p>W3Schools is a web developer's site.</p>
+  <br />
+</div>
+            </fieldset>
+            
+                       <fieldset>
+            	<legend><h4>Picture</h4></legend>
+                <div class="code">
+                	<code>
+                    <xmp>
+  <!DOCTYPE html>
+  <html>
+  <body>
+
+  <img src="w3schools.jpg" width="104" height="142">
+
+  </body>
+  </html>
+                    </xmp>
+                    </code>
+                </div>
+<br />
+<div class="code">
+<br />
+  <img src="https://www.w3schools.com/html/w3schools.jpg" width="104" height="142">
+  <br />
+</div>
+            </fieldset>
+            
+            
+            
+            
+                        <fieldset>
+            	<legend><h4>Heading</h4></legend>
+                <div class="code">
+                	<code>
+                    <xmp>
+  <!DOCTYPE html>
+  <html>
+  <body>
+
+  <h1>London</h1>
+
+  <p>London is the capital city of England.</p>
+
+  </body>
+  </html>
+                    </xmp>
+                    </code>
+                </div>
+<br />
+<div class="code">
+<br />
+  <h1>London</h1>
+
+  <p>London is the capital city of England.</p>
+  <br />
+</div>
+            </fieldset>
+            
+            
+            <fieldset>
+            	<legend><h4>Heading</h4></legend>
+                <div class="code">
+                	<code>
+                    <xmp>
+  <!DOCTYPE html>
+  <html>
+  <body>
+
+  <p style="color:red">This is a paragraph.</p>
+
+  </body>
+  </html>
+                    </xmp>
+                    </code>
+                </div>
+<br />
+<div class="code">
+<br />
+  <p style="color:red">This is a paragraph.</p>
+  <br />
+</div>
+            </fieldset>
+            
+            
+            
+            
+            <fieldset>
+            	<legend><h4>Links</h4></legend>
+                <div class="code">
+                	<code>
+                    <xmp>
+  <!DOCTYPE html>
+  <html>
+  <body>
+
+  <a href="https://www.w3schools.com/html/html_images.asp">HTML Images</a>
+
+  </body>
+  </html>
+                    </xmp>
+                    </code>
+                </div>
+<br />
+<div class="code">
+<br />
+  <a href="https://www.w3schools.com/html/html_images.asp">HTML Images</a>
+  <br />
+</div>
+            </fieldset>
+            
+            
+            
+            
+            <fieldset>
+            	<legend><h4>Table</h4></legend>
+                <div class="code">
+                	<code>
+                    <xmp>
+  <!DOCTYPE html>
+  <html>
+  <head>
+  <style>
+  table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+  }
+  th, td {
+      padding: 5px;
+      text-align: left;
+  }
+  </style>
+  </head>
+  <body>
+
+  <table>
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Points</th>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Smith</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Eve</td>
+      <td>Jackson</td>
+      <td>94</td>
+    </tr>
+  </table>
+
+  </body>
+  </html>
+                    </xmp>
+                    </code>
+                </div>
+<br />
+<div class="code">
+<br />
+	<style>
+  table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+  }
+  th, td {
+      padding: 5px;
+      text-align: left;
+  }
+  </style>
+  <table>
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Points</th>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Smith</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Eve</td>
+      <td>Jackson</td>
+      <td>94</td>
+    </tr>
+  </table>
+  <br />
+</div>
+            </fieldset>
+            
+            
+            
+            
+<fieldset>
+            	<legend><h4>Links</h4></legend>
+                <div class="code">
+                	<code>
+                    <xmp>
+
+  <!DOCTYPE html>
+  <html>
+  <body>
+
+  <ul>
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ul>
+
+  </body>
+  </html>
+
+                    </xmp>
+                    </code>
+                </div>
+<br />
+<div class="code">
+<br />
+ <ul>
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ul>
+  <br />
+</div>
+            </fieldset>
+          
+          </div>
+
+      </div>  
+      <br />
+
+    </div>
+    </div>
+  </body>
+</html>
